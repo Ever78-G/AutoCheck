@@ -93,11 +93,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'sara_B.wsgi.application'
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # 👈 carpeta global
+    BASE_DIR / 'static',  # donde tienes tus imágenes y estilos
 ]
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 #
@@ -204,6 +208,3 @@ CELERY_TIMEZONE = 'UTC'
 CELERY_RESULT_BACKEND = "django-db"  #donde guarda los resultados
 
 
-# Configuración de archivos estáticos y medios
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
