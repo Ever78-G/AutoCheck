@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;    
+
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: tomato;
+  display: inline-flex;     /* Para centrar el ícono dentro */
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar {
+    background-color: rgb(146, 6, 6);
+    width: max-content;
+    border-radius: 10px;
+}
+.sidebar_list {
+    list-style: none;
+    padding: 0;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+
+}
+.sidebar_element {
+    border-radius: 3px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    color:rgb(101, 204, 16);
+}
+.sidebar_element:hover {
+    background-color: #394b5a;
+    cursor: pointer;
+    color: white;
+}
+
+.sidebar__icon--logo {
+    max-width: 30px;
+}

@@ -1,0 +1,265 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi API</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{% static 'js/interaccion.js' %}" defer></script>
+
+</head>
+
+<body class="p-0 m-0 box-border font-sans bg-slate-100">
+
+    <header class="fixed top-0 left-0 w-full flex items-center space-x-0 bg-white p-4 shadow z-50">
+        <!-- Primera Parte del emcabezado -->
+
+        <!--Logo Del API-->
+        <div class="w-40 h-16 rounded-full flex items-center justify-center text-white text-3xl font-bold m-0 p-0 ">
+            <img src="../static/images/sara.png" alt="">
+        </div>
+        <!--Nombre y eslogan del API-->
+        <div class="flex flex-col  w-full">
+            <h1 class="text-2xl font-bold text-gray-900 m-0 p-0 ">AutoCheck API</h1>
+            <span class="text-sm text-gray-500 uppercase tracking-wide">Cambia el modo de hacer tus Revisones
+                automotrices</span>
+        </div>
+        <!--Navegacion-->
+        <nav class="m-0 items-end flex p-2 w-full">
+            <ul class="flex space-x-0 ml-auto text-black-600">
+                <li>
+                    <a href="#"
+                        class="flex items-center space-x-1 cursor-pointer hover:text-blue-500 px-2 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 
+                                1.125H9.75v-4.875c0-.621.504-1.125 
+                                1.125-1.125h2.25c.621 0 1.125.504 
+                                1.125 1.125V21h4.125c.621 0 
+                                1.125-.504 1.125-1.125V9.75M8.25 
+                                21h8.25" />
+                        </svg>
+                        <p>Inicio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Integrantes"
+                        class="flex items-center space-x-1 cursor-pointer hover:text-blue-500 px-2 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                        </svg>
+
+                        <p>Integrantes</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#herramientas"
+                        class="flex items-center space-x-1 cursor-pointer hover:text-blue-500 px-2 py-1 rounded">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-4 h-4">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                        </svg>
+
+                        <p>Herramientas</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="  mt-20   pt-6 bg-slate-300">
+
+        <!--Parte de inicio-->
+        <section id="start" class="flex space-x-2 m-4">
+
+            <div class="w-2/2 p-4 bg-white rounded shadow">
+                <h2 class="text-blue-400 text-2xl font-bold mb-0 text-center">Bienvenidos a AutoCheck API</h2>
+                <div class="flex  items-center">
+                    <p class="text-justify m-0 p-0 w-3/4">
+                        Una API diseñada para optimizar la gestión de tu negocio de revisiones automotrices,
+                        permitiéndote trabajar de forma rápida y eficiente con formularios predefinidos y adaptables a
+                        tus
+                        necesidades.
+
+                        Esta herramienta te ayudará a mejorar la experiencia de tus clientes y a agilizar tus procesos
+                        internos. ¡Comienza a explorar las funcionalidades de AutoCheck API y lleva tu negocio al
+                        siguiente
+                        nivel!
+                    </p>
+                    <div class="flex justify-center rounded-full overflow-hidden w-48 h-48 mx-auto m-0 bg">
+                        <img src="../static/images/apilogo.png" alt="">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section class="flex space-x-2 m-4">
+            <div class=" p-4 bg-white rounded shadow">
+                <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center">Como funciona</h2>
+                <p class="text-center m-0 p-0">
+                    Al Ser una API REST, esta permite la comunicación entre diferentes sistemas a través de solicitudes
+                    HTTP.
+                    Puedes integrar AutoCheck API en tu sistema existente o desarrollar una nueva aplicación que se
+                    comunique con la API.
+                    La API ofrece varios endpoints que permiten realizar operaciones CRUD (Crear, Leer, Actualizar,
+                    Eliminar) en los datos relacionados con las revisiones automotrices.
+                    Puedes utilizar herramientas como Postman o cURL para probar los endpoints de la API y ver cómo
+                    funcionan.
+                    La documentación de la API proporciona detalles sobre cada endpoint, incluyendo los parámetros
+                    requeridos, los formatos de respuesta y ejemplos de uso.
+                    Asegúrate de manejar adecuadamente la autenticación y la autorización para proteger los datos
+                    sensibles.
+                    Puedes utilizar bibliotecas y frameworks en tu lenguaje de programación preferido para facilitar la
+                    integración con la API.
+                </p>
+                <div class="flex justify-center items-center p-6">
+                    <video class="rounded-2xl shadow-lg" width="640" controls>
+                        <source src="../static/images/compresed-sara-v3.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!--Parte de herramientas-->
+        <section id="herramientas" class=" m-4 p-4 bg-white rounded  shadow">
+            <article class="flex space-x-2 m-4 text-center">
+
+                <div class="w-1/2 p-4 bg-white rounded ">
+                    <div class="flex justify-center rounded-full overflow-hidden w-20 h-20 mx-auto m-0">
+                        <img src="../static/images/pngegg.png" alt="">
+                    </div>
+                    <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center">Python</h2>
+                    <p>inicio este proyecto basando en unos de los lenguajes mas populares en la actualidad,Esto con la
+                        idea de hacer un proyecto de la mayor calidad que nos diera un reto como nuevos programadores
+                    </p>
+                </div>
+
+                <div class="w-1/2 p-4 bg-white rounded ">
+                    <div class="flex justify-center  overflow-hidden w-16 h-16 mx-auto m-0">
+
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+
+                    </div>
+
+                    <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center">Django</h2>
+                    <p>
+                        Django es un framework web de alto nivel que fomenta el desarrollo rápido y limpio. Está
+                        escrito en Python y sigue el patrón de diseño Modelo-Vista-Serializer (MVS).
+                </div>
+
+                <div class="w-1/2 p-4 bg-white rounded ">
+
+                    <div class="flex justify-center  overflow-hidden w-20 h-20 mx-auto m-0">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+                    </div>
+                    <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center">PostGres</h2>
+                    <p>
+                        PostgreSQL es un sistema de gestión de bases de datos relacional y objeto (ORDBMS) de código
+                        abierto y gratuito. Es conocido por su robustez, escalabilidad y cumplimiento de estándares
+                        SQL.
+                </div>
+
+            </article>
+            <article class="  space-x-2 m-4 text-center items-center">
+
+                <div class=" p-4 bg-white rounded  mr-40 ml-40">
+                    <div class="flex justify-center  overflow-hidden w-20 h-20 mx-auto m-0">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" />
+                    </div>
+                    <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center ">Docker</h2>
+                    <p>
+                        Docker es una plataforma que permite a los desarrolladores empaquetar aplicaciones y sus
+                        dependencias en contenedores portátiles y consistentes. Facilita la creación, despliegue y
+                        ejecución de aplicaciones en cualquier entorno.
+                    </p>
+                </div>
+
+            </article>
+
+        </section>
+
+        <!--Parte de integrantes-->
+        <section id="Integrantes">
+
+            <article class=" w-full p-4 m-3 bg-white rounded shadow">
+
+                <h2 class="text-blue-400 text-2xl font-bold mb-4 text-center">Integrantes</h2>
+                <p class="text-center">Conoce al equipo detras de AutoCheck API</p>
+
+                <!--Parte de Andres-->
+                <div class="flex space-x-2 items-center">
+                    <div class="w-1/2 p-4 bg-white rounded  text-center ">
+                        <div class="flex justify-center rounded-full overflow-hidden w-60 h-60 mx-auto mb-4">
+                            <img src="../static/images/182383098.jpg" alt="">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Andres Becerra</h3>
+                        <h4 class="text-center text-gray-500">Developer Junior</h4>
+
+                        <p class="text-center">Soy un estudiante apasionado de Ciencias de la Computación, enfocado en
+                            perfeccionar mis habilidades y en el desarrollo de proyectos funcionales, eficientes y
+                            orientados al usuario. Cuento con más de dos años de experiencia práctica que respaldan mi
+                            formación y compromiso con la excelencia tecnológica.</p>
+
+                    </div>
+
+                    <!--Parte de Ever-->
+
+                    <div class="w-1/2 p-4 bg-white rounded  text-center">
+                        <div class="flex justify-center rounded-full overflow-hidden w-60 h-60 mx-auto mb-4">
+                            <img src="../static/images/ever.jpg" alt="">
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Ever Giraldo</h3>
+                        <h4 class="text-center text-gray-500">Developer Junior</h4>
+
+
+                        <p>Soy nuevo en el mundo del desarrollo y me apasiona descubrir cómo funcionan las aplicaciones desde dentro, en esa parte que casi nadie ve. Por eso me motiva aprender todo lo relacionado con el desarrollo Backend y entender a fondo la lógica que da vida a cada sistema.</p>
+
+                    </div>
+
+                    <!--Parte de Cesar-->
+
+                    <div class="w-1/2 p-4 bg-white rounded  ">
+
+                        <div class="flex justify-center rounded-full overflow-hidden w-60 h-60 mx-auto mb-4">
+
+                            <img src="../static/images/139662949.jpg" alt="">
+                        </div>
+
+                        <h3 class=" text-center text-xl font-bold mb-2">Cesar Valbuena</h3>
+                        <h4 class="text-center text-gray-500">Developer Junior</h4>
+
+                        <p class="text-center">Soy un estudiante apasionado de Ciencias de la Computación, enfocado en
+                            perfeccionar mis habilidades y en el desarrollo de proyectos funcionales, eficientes y
+                            orientados al usuario. Cuento con más de dos años de experiencia práctica que respaldan mi
+                            formación y compromiso con la excelencia tecnológica.</p>
+
+                    </div>
+
+                </div>
+
+
+            </article>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
